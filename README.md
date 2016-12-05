@@ -1,4 +1,3 @@
 
 ### webpack 配置 / 热加载 / 实时编译
-* es6 + vue + hbs + node/express 
- 
+* es6 + vue 
