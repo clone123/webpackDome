@@ -3,4 +3,4 @@
 * es6 + vue 
 
 
-### 启动 :  npm run start
+### 启动 :  npm run server
