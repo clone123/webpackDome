@@ -2,7 +2,7 @@
  * Created by huanghuanhuan on 2016/12/5 16:02
  */
 
-import style from './style.css'
+import style from './style.less'
 import template from './template.html'
 
 export default {

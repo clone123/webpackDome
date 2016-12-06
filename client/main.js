@@ -7,7 +7,6 @@ import App from './apps/index'
 
 new Vue({
   el: 'body',
-  replace: false,
   components: {
     App
   }
