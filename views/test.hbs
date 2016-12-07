@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clone</title>
+    {{#if webpackAssets.common}}
+        <link rel="stylesheet" href="{{webpackAssets.common.css}}">
+    {{/if}}
+
+    {{#if webpackAssets.index}}
+        <link rel="stylesheet" href="{{webpackAssets.index.css}}">
+    {{/if}}
+</head>
+<body>
+
+<app></app>
+
+{{#if webpackAssets.common}}
+    <script src="{{webpackAssets.common.js}}"></script>
+{{/if}}
+
+{{#if webpackAssets.index2}}
+    <script src="{{webpackAssets.index2.js}}"></script>
+{{/if}}
+</body>
+</html>

@@ -14,13 +14,15 @@ var srcPath = path.join(context, './client/');
 
 module.exports = {
   entry: {
-    'index': [ hotEntry, srcPath + '/main.js' ]
+    'index': [ hotEntry, srcPath + '/main.js' ],
+    'common': [ 'vue' ]
   },
   debug: true,
   output: {
     publicPath: '/public/dist/',
     path: distPath,
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js'
   },
 
   module: {
@@ -65,6 +67,18 @@ module.exports = {
       }
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_debugger: true,
+        cascade: false
+      }
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: [ 'common' ],
+      minChunks: 2
+      //  chunks:['index']
+    }),
     new AssetsPlugin()
   ]
 }

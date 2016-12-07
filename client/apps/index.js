@@ -4,13 +4,24 @@
 
 import style from './style.less'
 import template from './template.html'
+import load  from './load/index'
+import $ from 'jquery'
+
 
 export default {
   template,
-  data:function () {
-    return{
+  data: function () {
+    return {
       style,
-      name:'clone'
+      name: 'clone'
     }
+  },
+  methods: {
+    load: function () {
+      console.log('loading!')
+    }
+  },
+  components: {
+    load
   }
 }
