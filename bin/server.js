@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-
 /**
- * Module dependencies.
+ * Created by huanghuanhuan on 2016/12/8 15:46
  */
 
 var app = require('../app')

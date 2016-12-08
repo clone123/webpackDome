@@ -13,7 +13,7 @@ export default {
   data: function () {
     return {
       style,
-      name: 'clone'
+      name: 'clone1'
     }
   },
   methods: {

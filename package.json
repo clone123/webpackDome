@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "server": "NODE_ENV=development node ./bin/server.js"
+    "server": "node ./bin/server.js"
+  //  "client": "pm2 start pm2.json"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
@@ -14,6 +15,7 @@
     "handlebars": "^4.0.5",
     "jquery": "^3.1.1",
     "morgan": "~1.7.0",
+    "pm2": "^2.1.6",
     "precss": "^1.4.0",
     "serve-favicon": "~2.3.0",
     "vue": "^1.0.26",

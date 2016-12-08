@@ -1,0 +1,22 @@
+{
+  "apps" : [{
+    "name"               : "gnum",
+    "script"             : "./bin/server.js",
+    "env": {
+      "COMMON_VARIABLE": "true",
+      "PORT": "3000",
+      "NODE_ENV": "development"
+    },
+    "exec_interpreter"   : "node",
+    "node_args"          : "--harmony",
+    "exec_mode"          : "cluster_mode",
+  //  "instances"          : 1,
+    "log_date_format"    : "",
+    "max_memory_restart" : "1400M",
+    "merge_logs"         : true,
+    "error_file"         : "logs/error.log",
+    "out_file"           : "logs/out.log",
+    "pid_file"           : "logs/web-fe.pid",
+    "watch"              : false
+  }]
+}

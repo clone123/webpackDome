@@ -21,8 +21,8 @@ module.exports = {
   output: {
     publicPath: '/public/dist/',
     path: distPath,
-    filename: '[name].bundle.js',
-    chunkFilename: '[name].bundle.js'
+    filename: '[name].bundle.[hash].js',
+    chunkFilename: '[name].bundle.[hash].js'
   },
 
   module: {
